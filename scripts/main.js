@@ -1,5 +1,5 @@
 import data from "./data.js";
-import { searchMovieByTitle, makeBgActive } from "./helpers.js";
+import { searchMovieByTitle, makeBgActive, clearInput } from "./helpers.js";
 
 class MoviesApp {
   constructor(options) {
@@ -87,6 +87,7 @@ class MoviesApp {
           return searchMovieByTitle(movie, searchValue);
         })
         .forEach(makeBgActive);
+        clearInput()
     });
   }
 
