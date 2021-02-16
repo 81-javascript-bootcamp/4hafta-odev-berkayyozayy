@@ -8,5 +8,5 @@ export const makeBgActive = (movie) => {
 };
 
 export const clearInput = () => {
-  return (searchInput.value = "");
+  return searchInput.value = "";
 };
